@@ -1,12 +1,10 @@
-package it.objectmethod.esercizio.entities;
-
-import java.sql.Date;
+package it.objectmethod.esercizio.model;
 
 public class Attivita 
 {
 	private int id;
 	private String nome;
-	private Date data;
+	private String data;
 	private int durata;
 	private String tempo;
 	
@@ -23,10 +21,10 @@ public class Attivita
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 	public int getDurata() {
@@ -42,12 +40,12 @@ public class Attivita
 		this.tempo = tempo;
 	}
 	
-	public String toString()
+	/*public String toString()
 	{
 		return    "<td>" + id + "</td>"
 				+ "<td>" + nome + "</td>"
 				+ "<td>" + data + "</td>"
 				+ "<td>" + durata + " " + tempo + "</td>"
 				;
-	}
+	}*/
 }
